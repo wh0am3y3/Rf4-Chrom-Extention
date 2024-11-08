@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "RF4 Bookmarks",
+  "description": "Base Level Extension",
+  "permissions": ["bookmarks", "tabs"],
+  "version": "1.2",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "logo.jpg"
+  },
+  "icons": {
+    "16": "logo.jpg",
+    "48": "logo.jpg",
+    "128": "logo.jpg"
+  }
+}

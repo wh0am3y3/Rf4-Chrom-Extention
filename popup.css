@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+}
+
+.container {
+  width: 300px;
+  padding: 16px;
+}
+
+h1 {
+  font-size: 1.5em;
+  color: #6200ea;
+  margin-bottom: 16px;
+}
+
+ul#bookmark-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul#bookmark-list li {
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+ul#bookmark-list li:hover {
+  background-color: #c7c7c7;
+}
+
