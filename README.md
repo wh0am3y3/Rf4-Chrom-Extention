@@ -1,5 +1,8 @@
-Downlaod [Zip file](https://github.com/wh0am3y3/Rf4-Chrom-Extention/archive/refs/heads/main.zip) and unpack it
-Load unpack extention in Developer mode
-![alt text](https://github.com/wh0am3y3/Rf4-Chrom-Extention/blob/main/docs/developer-mode.png?raw=true)
+# RF4 Bookmarks Extention
 
-or install CRX file inside that zip (Drag and Drop in [chrome://extensions/](chrome://extensions/) )
+1. Downlaod [Zip file](https://github.com/wh0am3y3/Rf4-Chrom-Extention/archive/refs/heads/main.zip) and unpack it
+2. Load unpack extention in Developer mode
+![Developer mode](https://github.com/wh0am3y3/Rf4-Chrom-Extention/blob/main/docs/developer-mode.png?raw=true)
+
+in repo there is also CRX file that can be installed
+(Drag and Drop in [chrome://extensions/]( chrome://extensions/ ) )
