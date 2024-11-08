@@ -1,38 +1,102 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fafafa;
-  color: #333;
-}
-
+/* Container styling */
 .container {
-  width: 300px;
-  padding: 16px;
+  width: 320px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
 }
 
+/* Header */
 h1 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   color: #6200ea;
+  margin-bottom: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Tab navigation */
+.tabs {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 16px;
 }
 
-ul#bookmark-list {
+.tab {
+  flex: 1;
+  padding: 8px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab.active {
+  background-color: #6200ea;
+  color: #ffffff;
+}
+
+/* Tab content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Bookmark list styling */
+#bookmark-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-ul#bookmark-list li {
+/* Bookmark card styling */
+#bookmark-list li {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.2s;
+  position: relative;
+}
+
+#bookmark-list li:hover {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Add bookmark form */
+#add-bookmark input {
+  width: 100%;
   padding: 8px;
   margin-bottom: 8px;
-  background-color: #e0e0e0;
+  border: 1px solid #ccc;
   border-radius: 4px;
+  font-size: 0.9em;
+}
+
+#add-bookmark button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6200ea;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-ul#bookmark-list li:hover {
-  background-color: #c7c7c7;
+#add-bookmark button:hover {
+  background-color: #3700b3;
 }
 

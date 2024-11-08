@@ -1,22 +1,34 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookmarks</title>
-    <link rel="stylesheet" href="popup.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmarks</title>
+  <link rel="stylesheet" href="popup.css">
 </head>
-
 <body>
   <div class="container">
-    <h1>Bookmarks</h1>
-    <ul id="bookmark-list"></ul>
-      <!-- Example links with IDs -->
-      <li id="bookmark-google">Google</li>
-      <li id="bookmark-wikipedia">Wikipedia</li>
-      <li id="bookmark-github">GitHub</li>
+    <h1>RF4 - Bookmark Manager</h1>
+    
+    <!-- Tab Navigation -->
+    <div class="tabs">
+      <button id="view-tab" class="tab active">View Bookmarks</button>
+      <button id="add-tab" class="tab">Add Bookmark</button>
+    </div>
+    
+    <!-- View Bookmarks Tab Content -->
+    <div id="view-bookmarks" class="tab-content">
+      <ul id="bookmark-list"></ul>
+    </div>
+    
+    <!-- Add Bookmark Tab Content -->
+    <div id="add-bookmark" class="tab-content" style="display: none;">
+      <input type="text" id="bookmark-title" placeholder="Title" />
+      <input type="text" id="bookmark-url" placeholder="URL" />
+      <button id="add-bookmark-btn">Add Bookmark</button>
+    </div>
   </div>
   <script src="popup.js"></script>
 </body>
-
 </html>
+
